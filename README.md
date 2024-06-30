@@ -12,26 +12,23 @@ STL-10:
 
 https://cs.stanford.edu/~acoates/stl10/
 
-下载数据后，在根目录下创建datasets文件夹，将下载好的数据集解压到datasets文件夹中，文件目录格式如下:
+下载数据后，存入dayasets文件夹中，更新train中数据集路径。datasets文件目录格式如下:
 ```
-root
-├── datasets
-│   ├── cifar-10-batches-py
-│   ├── cifar-100-python
-│   │   ├── file.txt~
-│   │   ├── meta
-│   │   ├── test
-│   │   └── train
-│   └── stl10_binary
-│       ├── class_names.txt
-│       ├── fold_indices.txt
-│       ├── test_X.bin
-│       ├── test_y.bin
-│       ├── train_X.bin
-│       ├── train_y.bin
-│       └── unlabeled_X.bin
-└── cifar-100-python.tar.gz
-└── stl10_binary.tar.gz
+ datasets
+   ├── cifar-10-batches-py
+   ├── cifar-100-python
+   │   ├── file.txt~
+   │   ├── meta
+   │   ├── test
+   │   └── train
+   └── stl10_binary
+       ├── class_names.txt
+       ├── fold_indices.txt
+       ├── test_X.bin
+       ├── test_y.bin
+       ├── train_X.bin
+       ├── train_y.bin
+       └── unlabeled_X.bin
 ```
 
 ## 自监督学习+微调训练
